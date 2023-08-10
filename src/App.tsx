@@ -1,15 +1,16 @@
-import { useState } from 'react'
+import { Component, ReactNode } from 'react'
 
 import './App.css'
+import Quote from './components/quote/Quote'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <h1>Random Quote Machine</h1>
-    </>
-  )
+class App extends Component {
+  render(): ReactNode {
+    return (
+      <>
+        <Quote />
+      </>
+    )
+  }
 }
 
 export default App
