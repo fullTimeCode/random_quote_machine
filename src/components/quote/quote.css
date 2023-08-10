@@ -18,13 +18,19 @@
   text-align: center;
   border-radius: 7px;
   display: grid;
+  place-items: center;
+}
+.content-wrapper {
+  padding: 4rem;
+  display: grid;
   grid-template-rows: 2fr 1fr;
   transition: all 250ms ease-in;
+  gap: 4rem;
 }
 
 main#content {
-  padding: 2rem;
   transition: all 250ms ease-in;
+  margin-bottom: 2rem;
 }
 
 #text {
@@ -32,6 +38,7 @@ main#content {
   display: flex;
   justify-content: center;
   align-items: start;
+  text-align: justify;
   gap: 0.5rem;
 }
 
@@ -42,8 +49,7 @@ main#content {
 
 .btn-group {
   display: flex;
-  padding: 2rem;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: middle;
 }
 
@@ -61,6 +67,10 @@ main#content {
   justify-content: center;
   align-items: center;
   transition: all 250ms ease-in;
-}
-#tweet-quote > svg {
+  cursor: pointer;
+ 
+  &:hover {
+    filter: brightness(1.4); 
+    color: yellowgreen;
+  }
 }

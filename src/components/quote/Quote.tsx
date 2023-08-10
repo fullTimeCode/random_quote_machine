@@ -1,6 +1,7 @@
 import './quote.css'
 import { Component, ReactNode } from 'react'
 import { FaTwitter, FaQuoteLeft } from 'react-icons/fa'
+import { CgPlayButtonO } from 'react-icons/cg'
 
 type quoteProps = {
   styleNames?: string
@@ -67,32 +68,34 @@ class Quote extends Component<quoteProps, QuoteState> {
         className='quote-wrapper'
         style={{ backgroundColor: this.state.color }}>
         <div id='quote-box'>
-          <main
-            id='content'
-            style={{ color: this.state.color }}>
-            <blockquote id='text'>
-              <span className=''>
-                <FaQuoteLeft size='30' />
-              </span>
-              <span className=''>{this.state.text}</span>
-            </blockquote>
-            <p id='author'>-{this.state.author}</p>
-          </main>
-          <div className='btn-group'>
-            <a
-              href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${this.state.text}`}
-              id='tweet-quote'
-              target='_blank'
-              style={{ backgroundColor: this.state.color, color: 'white' }}>
-              <FaTwitter />
-            </a>
+          <div className='content-wrapper'>
+            <main
+              id='content'
+              style={{ color: this.state.color }}>
+              <blockquote id='text'>
+                <span className=''>
+                  <FaQuoteLeft size='30' />
+                </span>
+                <span className=''>{this.state.text}</span>
+              </blockquote>
+              <p id='author'>-{this.state.author}</p>
+            </main>
+            <div className='btn-group'>
+              <a
+                href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${this.state.text}`}
+                id='tweet-quote'
+                target='_blank'
+                style={{ backgroundColor: this.state.color, color: 'white' }}>
+                <FaTwitter />
+              </a>
 
-            <button
-              id='new-quote'
-              onClick={this.handleClick}
-              style={{ backgroundColor: this.state.color, color: 'white' }}>
-              new quote
-            </button>
+              <button
+                id='new-quote'
+                onClick={this.handleClick}
+                style={{ backgroundColor: this.state.color, color: 'white' }}>
+                <CgPlayButtonO />
+              </button>
+            </div>
           </div>
         </div>
       </div>
