@@ -8,6 +8,7 @@
   align-items: center;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  transition: all 250ms ease-in;
 }
 
 #quote-box {
@@ -18,10 +19,12 @@
   border-radius: 7px;
   display: grid;
   grid-template-rows: 2fr 1fr;
+  transition: all 250ms ease-in;
 }
 
 main#content {
   padding: 2rem;
+  transition: all 250ms ease-in;
 }
 
 #text {
@@ -57,6 +60,7 @@ main#content {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 250ms ease-in;
 }
 #tweet-quote > svg {
 }
