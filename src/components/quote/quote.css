@@ -1,0 +1,62 @@
+.quote-wrapper {
+  background-color: inherit;
+  color: #1a1a1a;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#quote-box {
+  max-width: 60%;
+  width: 600px;
+  background-color: rgba(240, 240, 240, 0.4);
+  text-align: center;
+  border-radius: 7px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+main#content {
+  padding: 2rem;
+}
+
+#text {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+#author {
+  text-align: right;
+  font-style: italic;
+}
+
+.btn-group {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: middle;
+}
+
+#tweet-quote,
+#new-quote {
+  box-sizing: border-box;
+  height: 3rem;
+  width: fit-content;
+  padding: 0 2rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  border: none;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tweet-quote > svg {
+}
